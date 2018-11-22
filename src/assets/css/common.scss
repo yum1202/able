@@ -63,12 +63,25 @@ header {
 }
 .v-tabs__div + .v-tabs__div {
   padding-left: 10px;
+  border-left: 1px solid #ddd;
+  margin-left: 10px;
 }
 .v-tabs__item {
   color: $blue;
   padding: 0;
+  text-transform:capitalize;
+}
+.v-tabs__container {
+  height: 21px;
 }
 .v-tabs__item:not(.v-tabs__item--active) {
   color: $font;
   opacity: 1;
+}
+
+.detailTabs {
+  .v-tabs__div {
+    max-width: 100%;
+    display: block;
+  }
 }
