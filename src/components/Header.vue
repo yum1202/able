@@ -1,7 +1,7 @@
 <template>
   <header>
     <v-flex xs12>
-      <h2 class="name">Able<br/>Freelance Group</h2>
+      <router-link to="/" class="name">Able<br/>Freelance Group</router-link>
       <p class="subText">UI/UX planner, designer,publisher/front-end developer<br/>seoul, south korea</p>
     </v-flex>
   </header>

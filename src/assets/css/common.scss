@@ -11,7 +11,11 @@ header {
   .name {
     font-size: 22px;
     line-height: 28px;
+    text-decoration: none;
     padding-bottom: 15px;
+    color: $font;
+    display: block;
+    font-weight: 700;
   }
   .subText {
     font-size: 14px;
