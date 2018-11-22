@@ -1,0 +1,74 @@
+.theme--light.application {
+  background: #fff;
+}
+.application--wrap {
+  padding: 60px;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+}
+header {
+  .name {
+    font-size: 22px;
+    line-height: 28px;
+    padding-bottom: 15px;
+  }
+  .subText {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+.about {
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid #f6f6f6;
+  border-bottom: 1px solid #f6f6f6;
+}
+.contact{
+  font-size: 15px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #f6f6f6;
+  img {
+    vertical-align: middle;
+    display: inline;
+  }
+  .mail {
+    display: inline-block;
+    margin-left: 10px;
+    text-decoration: underline;
+    font-size: 16px;
+    padding-bottom: 16px;
+  }
+  .point {
+    color: $point-font;
+  }
+}
+
+.menu {
+  position: absolute;
+  bottom: 60px;
+  a {
+    text-decoration: none;
+    color: $blue;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+.v-window-item {
+  transition: none;
+}
+.v-tabs__div + .v-tabs__div {
+  padding-left: 10px;
+}
+.v-tabs__item {
+  color: $blue;
+  padding: 0;
+}
+.v-tabs__item:not(.v-tabs__item--active) {
+  color: $font;
+  opacity: 1;
+}
