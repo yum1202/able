@@ -60,6 +60,7 @@ header {
 
 .v-window-item {
   transition: none;
+  min-height: 500px;
 }
 .v-tabs__div + .v-tabs__div {
   padding-left: 10px;
