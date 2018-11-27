@@ -90,3 +90,9 @@ header {
     display: block;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .application--wrap {
+    padding: 20px;
+  }
+}

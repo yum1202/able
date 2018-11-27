@@ -23,9 +23,11 @@
         </v-flex>
         <v-flex xs12 sm8>
           <div class="detail">
-            {{correntTitle}}
-            {{correntClient}}
-            {{currentPath}}
+            <p>work: {{correntTitle}}</p>
+            <p>client: {{correntClient}}</p>
+            <div class="imgWrap">
+              <img :src="require(`@/assets/images/${currentPath}`)">
+            </div>
           </div>
         </v-flex>
         </v-layout>
@@ -46,18 +48,21 @@ export default {
   components: {},
   data () {
     return {
+      correntTitle: '우리은행 위비톡 PC application 1.0',
+      correntClient: '우리은행',
+      currentPath: 'sample.png',
       portfolio: [{
         title: '우리은행 위비톡 PC application 1.0',
         client: '우리은행',
-        url: '/'
+        url: 'sample'
       }, {
         title: '고영테크놀러지 OCT 의료 장비',
         client: '우리은행2',
-        url: '/'
+        url: 'sample'
       }, {
         title: '고영테크놀러지 AOI 장비',
         client: '우리은행2',
-        url: '/'
+        url: 'sample'
       }, {
         title: 'SK Broadband 옥수수 Mobile',
         client: '우리은행2',
@@ -74,10 +79,7 @@ export default {
         title: '자동차 소셜네트워크 CARnect',
         client: '우리은행2',
         url: '/'
-      }],
-      correntTitle: '',
-      correntClient: '',
-      currentPath: ''
+      }]
     }
   },
   methods: {
